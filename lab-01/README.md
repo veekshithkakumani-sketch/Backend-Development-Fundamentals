@@ -21,6 +21,8 @@ To create and execute an HTTP server and an Express.js server using Node.js and 
 
 ## 4. Implementation
 
+Run the following commands from the `lab-01` directory. From the repository root, first run `cd lab-01`.
+
 ### Step 1: Initialize the Node.js project
 
 ```bash
