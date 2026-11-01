@@ -23,35 +23,21 @@ To create and execute an HTTP server and an Express.js server using Node.js and 
 
 Run the following commands from the `lab-01` directory. From the repository root, first run `cd lab-01`.
 
-### Step 1: Initialize the Node.js project
+### Step 1: Install dependencies
 
 ```bash
-npm init -y
+npm install
 ```
 
-This command creates the `package.json` file for managing project information and dependencies.
-
-### Step 2: Install Express.js
+### Step 2: Run a server
 
 ```bash
-npm install express
+npm start             # Express server with the lab routes
+npm run start:express # Express server with a 404 handler
+npm run start:http    # optional plain Node.js HTTP server
 ```
 
-This command installs the Express.js framework.
-
-### Step 3: Create the server
-
-Create an `index.js` file and write the Express server code.
-
-### Step 4: Execute the server
-
-```bash
-node index.js
-```
-
-The server runs at:
-
-`http://localhost:3000`
+The servers run at `http://localhost:3000`.
 
 ## 5. Routes Implemented
 
@@ -60,6 +46,7 @@ The server runs at:
 | `/` | Displays the welcome message |
 | `/about` | Displays student information in JSON format |
 | `/time` | Displays the current date and time |
+| Unknown route | Returns a 404 response in `server.js` |
 
 ## 6. Screenshots
 
